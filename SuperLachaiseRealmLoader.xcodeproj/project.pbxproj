@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		018724A0B56C8DBD9F56AE97 /* Pods_SuperLachaiseRealmLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC12938D79F33C49BCD59C5 /* Pods_SuperLachaiseRealmLoader.framework */; };
 		557A26601ED1B88600F636F0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A265F1ED1B88600F636F0 /* main.swift */; };
+		557A26631ED1B8E400F636F0 /* OpenStreetMapElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26621ED1B8E400F636F0 /* OpenStreetMapElement.swift */; };
+		557A26671ED1B92300F636F0 /* WikidataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26661ED1B92300F636F0 /* WikidataEntry.swift */; };
+		557A26691ED1B92D00F636F0 /* LocalizedWikidataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26681ED1B92D00F636F0 /* LocalizedWikidataEntry.swift */; };
+		557A266B1ED1B93800F636F0 /* WikidataDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A266A1ED1B93800F636F0 /* WikidataDate.swift */; };
+		557A266E1ED1B95800F636F0 /* WikipediaPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A266D1ED1B95800F636F0 /* WikipediaPage.swift */; };
+		557A26711ED1B97300F636F0 /* CommonsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26701ED1B97300F636F0 /* CommonsCategory.swift */; };
+		557A26731ED1B97D00F636F0 /* CommonsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26721ED1B97D00F636F0 /* CommonsFile.swift */; };
+		557A26761ED1B99300F636F0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26751ED1B99300F636F0 /* Category.swift */; };
+		557A26781ED1B99D00F636F0 /* LocalizedCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26771ED1B99D00F636F0 /* LocalizedCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +25,15 @@
 		557A264D1ED1B6A400F636F0 /* SuperLachaiseRealmLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperLachaiseRealmLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		557A26591ED1B6A400F636F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		557A265F1ED1B88600F636F0 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		557A26621ED1B8E400F636F0 /* OpenStreetMapElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenStreetMapElement.swift; sourceTree = "<group>"; };
+		557A26661ED1B92300F636F0 /* WikidataEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikidataEntry.swift; sourceTree = "<group>"; };
+		557A26681ED1B92D00F636F0 /* LocalizedWikidataEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedWikidataEntry.swift; sourceTree = "<group>"; };
+		557A266A1ED1B93800F636F0 /* WikidataDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikidataDate.swift; sourceTree = "<group>"; };
+		557A266D1ED1B95800F636F0 /* WikipediaPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikipediaPage.swift; sourceTree = "<group>"; };
+		557A26701ED1B97300F636F0 /* CommonsCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonsCategory.swift; sourceTree = "<group>"; };
+		557A26721ED1B97D00F636F0 /* CommonsFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonsFile.swift; sourceTree = "<group>"; };
+		557A26751ED1B99300F636F0 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		557A26771ED1B99D00F636F0 /* LocalizedCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedCategory.swift; sourceTree = "<group>"; };
 		78B64916FE5394710D01920A /* Pods-SuperLachaiseRealmLoader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperLachaiseRealmLoader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperLachaiseRealmLoader/Pods-SuperLachaiseRealmLoader.debug.xcconfig"; sourceTree = "<group>"; };
 		9FC12938D79F33C49BCD59C5 /* Pods_SuperLachaiseRealmLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperLachaiseRealmLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,9 +89,66 @@
 			isa = PBXGroup;
 			children = (
 				557A265F1ED1B88600F636F0 /* main.swift */,
+				557A26611ED1B8CC00F636F0 /* Model */,
 				557A26591ED1B6A400F636F0 /* Info.plist */,
 			);
 			path = SuperLachaiseRealmLoader;
+			sourceTree = "<group>";
+		};
+		557A26611ED1B8CC00F636F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				557A26641ED1B8E800F636F0 /* OpenStreetMap */,
+				557A26651ED1B8FA00F636F0 /* Wikidata */,
+				557A266C1ED1B94B00F636F0 /* Wikipedia */,
+				557A266F1ED1B95C00F636F0 /* Commons */,
+				557A26741ED1B98700F636F0 /* Category */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		557A26641ED1B8E800F636F0 /* OpenStreetMap */ = {
+			isa = PBXGroup;
+			children = (
+				557A26621ED1B8E400F636F0 /* OpenStreetMapElement.swift */,
+			);
+			name = OpenStreetMap;
+			sourceTree = "<group>";
+		};
+		557A26651ED1B8FA00F636F0 /* Wikidata */ = {
+			isa = PBXGroup;
+			children = (
+				557A26661ED1B92300F636F0 /* WikidataEntry.swift */,
+				557A26681ED1B92D00F636F0 /* LocalizedWikidataEntry.swift */,
+				557A266A1ED1B93800F636F0 /* WikidataDate.swift */,
+			);
+			name = Wikidata;
+			sourceTree = "<group>";
+		};
+		557A266C1ED1B94B00F636F0 /* Wikipedia */ = {
+			isa = PBXGroup;
+			children = (
+				557A266D1ED1B95800F636F0 /* WikipediaPage.swift */,
+			);
+			name = Wikipedia;
+			sourceTree = "<group>";
+		};
+		557A266F1ED1B95C00F636F0 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				557A26701ED1B97300F636F0 /* CommonsCategory.swift */,
+				557A26721ED1B97D00F636F0 /* CommonsFile.swift */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		557A26741ED1B98700F636F0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				557A26751ED1B99300F636F0 /* Category.swift */,
+				557A26771ED1B99D00F636F0 /* LocalizedCategory.swift */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +271,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557A26731ED1B97D00F636F0 /* CommonsFile.swift in Sources */,
+				557A266E1ED1B95800F636F0 /* WikipediaPage.swift in Sources */,
+				557A26631ED1B8E400F636F0 /* OpenStreetMapElement.swift in Sources */,
+				557A266B1ED1B93800F636F0 /* WikidataDate.swift in Sources */,
 				557A26601ED1B88600F636F0 /* main.swift in Sources */,
+				557A26761ED1B99300F636F0 /* Category.swift in Sources */,
+				557A26711ED1B97300F636F0 /* CommonsCategory.swift in Sources */,
+				557A26781ED1B99D00F636F0 /* LocalizedCategory.swift in Sources */,
+				557A26691ED1B92D00F636F0 /* LocalizedWikidataEntry.swift in Sources */,
+				557A26671ED1B92300F636F0 /* WikidataEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
