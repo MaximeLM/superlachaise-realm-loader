@@ -93,6 +93,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		556717E31ED20D3600C3A0A2 /* Model+RealmLoader */ = {
+			isa = PBXGroup;
+			children = (
+				557A26801ED1CC3A00F636F0 /* OpenStreetMapElement+RealmLoader.swift */,
+				557A26951ED1D6F300F636F0 /* WikidataEntry+RealmLoader.swift */,
+				557A26931ED1D4C300F636F0 /* LocalizedWikidataEntry+RealmLoader.swift */,
+				557A26911ED1D35300F636F0 /* WikidataDate+RealmLoader.swift */,
+				557A268F1ED1D2EC00F636F0 /* WikipediaPage+RealmLoader.swift */,
+				557A268D1ED1D1C800F636F0 /* CommonsCategory+RealmLoader.swift */,
+				557A268B1ED1D0EA00F636F0 /* CommonsFile+RealmLoader.swift */,
+				557A26891ED1D03600F636F0 /* Category+RealmLoader.swift */,
+				557A26871ED1CF7100F636F0 /* LocalizedCategory+RealmLoader.swift */,
+			);
+			name = "Model+RealmLoader";
+			sourceTree = "<group>";
+		};
 		557A26441ED1B6A400F636F0 = {
 			isa = PBXGroup;
 			children = (
@@ -128,72 +144,24 @@
 		557A26611ED1B8CC00F636F0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				557A26641ED1B8E800F636F0 /* OpenStreetMap */,
-				557A26651ED1B8FA00F636F0 /* Wikidata */,
-				557A266C1ED1B94B00F636F0 /* Wikipedia */,
-				557A266F1ED1B95C00F636F0 /* Commons */,
-				557A26741ED1B98700F636F0 /* Category */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		557A26641ED1B8E800F636F0 /* OpenStreetMap */ = {
-			isa = PBXGroup;
-			children = (
 				557A26621ED1B8E400F636F0 /* OpenStreetMapElement.swift */,
-				557A26801ED1CC3A00F636F0 /* OpenStreetMapElement+RealmLoader.swift */,
-			);
-			name = OpenStreetMap;
-			sourceTree = "<group>";
-		};
-		557A26651ED1B8FA00F636F0 /* Wikidata */ = {
-			isa = PBXGroup;
-			children = (
 				557A26661ED1B92300F636F0 /* WikidataEntry.swift */,
 				557A26681ED1B92D00F636F0 /* LocalizedWikidataEntry.swift */,
 				557A266A1ED1B93800F636F0 /* WikidataDate.swift */,
-				557A26951ED1D6F300F636F0 /* WikidataEntry+RealmLoader.swift */,
-				557A26931ED1D4C300F636F0 /* LocalizedWikidataEntry+RealmLoader.swift */,
-				557A26911ED1D35300F636F0 /* WikidataDate+RealmLoader.swift */,
-			);
-			name = Wikidata;
-			sourceTree = "<group>";
-		};
-		557A266C1ED1B94B00F636F0 /* Wikipedia */ = {
-			isa = PBXGroup;
-			children = (
 				557A266D1ED1B95800F636F0 /* WikipediaPage.swift */,
-				557A268F1ED1D2EC00F636F0 /* WikipediaPage+RealmLoader.swift */,
-			);
-			name = Wikipedia;
-			sourceTree = "<group>";
-		};
-		557A266F1ED1B95C00F636F0 /* Commons */ = {
-			isa = PBXGroup;
-			children = (
 				557A26701ED1B97300F636F0 /* CommonsCategory.swift */,
 				557A26721ED1B97D00F636F0 /* CommonsFile.swift */,
-				557A268D1ED1D1C800F636F0 /* CommonsCategory+RealmLoader.swift */,
-				557A268B1ED1D0EA00F636F0 /* CommonsFile+RealmLoader.swift */,
-			);
-			name = Commons;
-			sourceTree = "<group>";
-		};
-		557A26741ED1B98700F636F0 /* Category */ = {
-			isa = PBXGroup;
-			children = (
 				557A26751ED1B99300F636F0 /* Category.swift */,
 				557A26771ED1B99D00F636F0 /* LocalizedCategory.swift */,
-				557A26891ED1D03600F636F0 /* Category+RealmLoader.swift */,
-				557A26871ED1CF7100F636F0 /* LocalizedCategory+RealmLoader.swift */,
 			);
-			name = Category;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		557A267B1ED1C6A700F636F0 /* Loader */ = {
 			isa = PBXGroup;
 			children = (
 				557A267C1ED1C6B600F636F0 /* RealmLoader.swift */,
+				556717E31ED20D3600C3A0A2 /* Model+RealmLoader */,
 			);
 			name = Loader;
 			sourceTree = "<group>";

@@ -11,6 +11,8 @@ import RealmSwift
 
 final class LocalizedWikidataEntry: Object {
     
+    dynamic var id = ""
+    
     dynamic var language = ""
     dynamic var wikidataEntry: WikidataEntry?
     
@@ -22,6 +24,10 @@ final class LocalizedWikidataEntry: Object {
     
     override class func indexedProperties() -> [String] {
         return ["language"]
+    }
+    
+    override class func primaryKey() -> String? {
+        return "id"
     }
     
 }

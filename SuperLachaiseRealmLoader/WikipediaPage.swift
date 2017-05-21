@@ -11,11 +11,17 @@ import RealmSwift
 
 final class WikipediaPage: Object {
     
+    dynamic var id = ""
+    
     dynamic var language = ""
     dynamic var title = ""
     
     dynamic var extract = ""
     
     let localizedWikidataEntries = LinkingObjects(fromType: LocalizedWikidataEntry.self, property: "wikipediaPage")
+    
+    override class func primaryKey() -> String? {
+        return "id"
+    }
     
 }

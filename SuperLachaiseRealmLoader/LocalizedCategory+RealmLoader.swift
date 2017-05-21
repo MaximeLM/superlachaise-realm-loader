@@ -20,6 +20,7 @@ extension LocalizedCategory {
         
         self.language = json["language"].stringValue
         self.category = category
+        self.id = "\(language)|\(category.id)"
         self.label = json["label"].stringValue
         
         realm.add(self)

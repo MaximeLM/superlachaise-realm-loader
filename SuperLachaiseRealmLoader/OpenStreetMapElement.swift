@@ -21,4 +21,8 @@ final class OpenStreetMapElement: Object {
     
     dynamic var wikidataEntry: WikidataEntry?
     
+    override class func primaryKey() -> String? {
+        return "id"
+    }
+    
 }

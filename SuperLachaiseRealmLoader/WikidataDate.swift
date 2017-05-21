@@ -11,6 +11,8 @@ import RealmSwift
 
 final class WikidataDate: Object {
     
+    dynamic var id = ""
+    
     dynamic var rawPrecision = ""
     let year = RealmOptional<Int>()
     let month = RealmOptional<Int>()
@@ -18,6 +20,10 @@ final class WikidataDate: Object {
     
     let birthOf = LinkingObjects(fromType: WikidataEntry.self, property: "dateOfBirth")
     let deathOf = LinkingObjects(fromType: WikidataEntry.self, property: "dateOfDeath")
+    
+    override class func primaryKey() -> String? {
+        return "id"
+    }
     
 }
 

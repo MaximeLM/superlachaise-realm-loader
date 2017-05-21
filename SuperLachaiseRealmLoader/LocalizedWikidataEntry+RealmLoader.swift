@@ -24,6 +24,7 @@ extension LocalizedWikidataEntry {
         
         self.language = json["language"].stringValue
         self.wikidataEntry = wikidataEntry
+        self.id = "\(language)|\(wikidataEntry.id)"
         self.label = json["label"].stringValue
         self.defaultSort = json["default_sort"].stringValue
         self.summary = json["description"].string

@@ -12,11 +12,12 @@ import SwiftyJSON
 
 extension WikidataDate {
     
-    convenience init(json: JSON, realm: Realm) throws {
+    convenience init(json: JSON, wikidataEntry: WikidataEntry, kind: String, realm: Realm) throws {
         self.init()
         
         try json["precision"].assertType(type: .string)
         
+        self.id = "\(kind)|\(wikidataEntry.id)"
         self.rawPrecision = json["precision"].stringValue
         self.year.value = json["year"].int
         self.month.value = json["month"].int

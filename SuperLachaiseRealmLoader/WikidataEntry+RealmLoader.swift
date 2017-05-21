@@ -31,13 +31,15 @@ extension WikidataEntry {
         self.burialPlotReference = json["burial_plot_reference"].stringValue
         self.commonsCategory = try realm.objectOrThrow(ofType: CommonsCategory.self, forPrimaryKey: json["commons_category"].stringValue)
         
+        realm.add(self)
+        
         if kind == .graveOf {
             try json["date_of_birth"].assertType(type: .dictionary)
             try json["date_of_death"].assertType(type: .dictionary)
             try json["categories"].assertType(type: .array)
             
-            self.dateOfBirth = try WikidataDate(json: json["date_of_birth"], realm: realm)
-            self.dateOfDeath = try WikidataDate(json: json["date_of_death"], realm: realm)
+            self.dateOfBirth = try WikidataDate(json: json["date_of_birth"], wikidataEntry: self, kind: "birth", realm: realm)
+            self.dateOfDeath = try WikidataDate(json: json["date_of_death"], wikidataEntry: self, kind: "death", realm: realm)
             try self.categories.append(objectsIn: json["categories"].arrayValue
                 .map { categoryJSON in
                     try categoryJSON.assertType(type: .string)
@@ -52,8 +54,6 @@ extension WikidataEntry {
                     return try realm.objectOrThrow(ofType: WikidataEntry.self, forPrimaryKey: graveOfJSON.stringValue)
                 })
         }
-        
-        realm.add(self)
         
         for (_, localizationJSON) in json["localizations"].dictionaryValue {
             _ = try LocalizedWikidataEntry(json: localizationJSON, wikidataEntry: self, realm: realm)

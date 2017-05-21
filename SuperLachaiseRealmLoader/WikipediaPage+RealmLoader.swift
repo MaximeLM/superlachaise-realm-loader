@@ -21,6 +21,7 @@ extension WikipediaPage {
         
         self.language = json["language"].stringValue
         self.title = json["title"].stringValue
+        self.id = "\(language)|\(title)"
         self.extract = json["extract"].stringValue
         
         realm.add(self)
