@@ -11,6 +11,8 @@ import RealmSwift
 
 final class OpenStreetMapElement: Object {
     
+    dynamic var id = ""
+    
     dynamic var elementType = ""
     dynamic var numericID: Int64 = 0
     

@@ -23,6 +23,7 @@ extension OpenStreetMapElement {
         
         self.elementType = json["element_type"].stringValue
         self.numericID = json["numeric_id"].int64Value
+        self.id = "\(elementType)/\(numericID)"
         self.latitude = json["latitude"].doubleValue
         self.longitude = json["longitude"].doubleValue
         self.wikidataEntry = try realm.objectOrThrow(ofType: WikidataEntry.self, forPrimaryKey: json["wikidata_entry"].stringValue)
