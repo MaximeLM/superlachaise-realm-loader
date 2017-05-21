@@ -8,4 +8,10 @@
 
 import Foundation
 
-print("hello, world!")
+do {
+    try RealmLoader().load()
+    print("✅ completed")
+} catch {
+    print("❌ \(error)")
+    exit(1)
+}
