@@ -13,7 +13,17 @@ extension Realm {
     
     func objectOrThrow<T: Object, K>(ofType type: T.Type, forPrimaryKey key: K) throws -> T {
         guard let object = object(ofType: type, forPrimaryKey: key) else {
-            throw RealmError.objectNotFound(type: type, pk: key)
+            assertionFailure()
+            throw RealmError.objectNotFound
+        }
+        return object
+    }
+    
+    func objectOrThrow<T: Object>(ofType type: T.Type, predicate: NSPredicate) throws -> T {
+        let objects = self.objects(type).filter(predicate)
+        guard let object = objects.first, objects.count == 1 else {
+            assertionFailure()
+            throw RealmError.objectNotFound
         }
         return object
     }
@@ -21,5 +31,5 @@ extension Realm {
 }
 
 enum RealmError: Error {
-    case objectNotFound(type: Object.Type, pk: Any)
+    case objectNotFound
 }

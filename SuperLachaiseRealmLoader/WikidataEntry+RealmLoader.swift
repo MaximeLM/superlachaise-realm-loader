@@ -21,14 +21,16 @@ extension WikidataEntry {
         try json["localizations"].assertType(type: .dictionary)
         try json["commons_category"].assertType(type: .string)
         
+        guard let jsonKind = JSONKind(rawValue: json["kind"].stringValue) else {
+            throw WikidataEntryJSONError.invalidKind(rawKind: json["kind"].stringValue)
+        }
+        let kind = jsonKind.kind
+        
         self.id = json["id"].stringValue
-        self.rawKind = json["kind"].stringValue
+        self.rawKind = kind.rawValue
         self.burialPlotReference = json["burial_plot_reference"].stringValue
         self.commonsCategory = try realm.objectOrThrow(ofType: CommonsCategory.self, forPrimaryKey: json["commons_category"].stringValue)
         
-        guard let kind = self.kind else {
-            throw WikidataEntryJSONError.invalidKind(rawKind: self.rawKind)
-        }
         if kind == .graveOf {
             try json["date_of_birth"].assertType(type: .dictionary)
             try json["date_of_death"].assertType(type: .dictionary)
@@ -55,6 +57,23 @@ extension WikidataEntry {
         
         for (_, localizationJSON) in json["localizations"].dictionaryValue {
             _ = try LocalizedWikidataEntry(json: localizationJSON, wikidataEntry: self, realm: realm)
+        }
+    }
+    
+    enum JSONKind: String {
+        case grave_of
+        case grave
+        case monument
+        
+        var kind: Kind {
+            switch self {
+            case .grave_of:
+                return .graveOf
+            case .grave:
+                return .grave
+            case .monument:
+                return .monument
+            }
         }
     }
     

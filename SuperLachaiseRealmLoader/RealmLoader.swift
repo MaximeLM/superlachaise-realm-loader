@@ -17,6 +17,7 @@ class RealmLoader {
     
     init() throws {
         guard let projectPath = Bundle.main.object(forInfoDictionaryKey: "ProjectDir") as? String else {
+            assertionFailure()
             throw RealmLoaderError.projectDirNotFound
         }
         let projectDir = URL(fileURLWithPath: projectPath, isDirectory: true)
@@ -63,10 +64,12 @@ class RealmLoader {
     }
     
     func loadFile(file: File, realm: Realm) throws {
-        let fileURL = inDir.appendingPathComponent(file.rawValue, isDirectory: false)
+        let fileURL = inDir
+            .appendingPathComponent(file.rawValue, isDirectory: false)
+            .appendingPathExtension("json")
         let fileJSON = try JSON(fileURL: fileURL)
-        try fileJSON[file.rawValue].assertType(type: .dictionary)
-        for (_, json) in fileJSON[file.rawValue].dictionaryValue {
+        try fileJSON[file.rawValue].assertType(type: .array)
+        for json in fileJSON[file.rawValue].arrayValue {
             try json.assertType(type: .dictionary)
             switch file {
             case .categories:

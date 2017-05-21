@@ -27,8 +27,9 @@ extension LocalizedWikidataEntry {
         self.label = json["label"].stringValue
         self.defaultSort = json["default_sort"].stringValue
         self.summary = json["description"].string
-        if let wikipediaPageID = json["wikipedia_page"].string {
-            self.wikipediaPage = try realm.objectOrThrow(ofType: WikipediaPage.self, forPrimaryKey: wikipediaPageID)
+        if let title = json["wikipedia_page"].string {
+            let predicate = NSPredicate(format: "language == %@ AND title == %@", language, title)
+            self.wikipediaPage = try realm.objectOrThrow(ofType: WikipediaPage.self, predicate: predicate)
         }
         
         realm.add(self)

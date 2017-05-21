@@ -21,6 +21,7 @@ extension JSON {
     
     func assertType(type: Type) throws {
         guard self.type == type else {
+            assertionFailure()
             throw JSONError.invalidType(json: self, expected: type)
         }
     }
