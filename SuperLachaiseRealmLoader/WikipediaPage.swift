@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class WikipediaPage: Object {
+final class WikipediaPage: Object {
     
     dynamic var language = ""
     dynamic var title = ""

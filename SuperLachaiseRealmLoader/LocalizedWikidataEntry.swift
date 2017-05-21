@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class LocalizedWikidataEntry: Object {
+final class LocalizedWikidataEntry: Object {
     
     dynamic var language = ""
     dynamic var wikidataEntry: WikidataEntry?

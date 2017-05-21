@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class CommonsFile: Object {
+final class CommonsFile: Object {
     
     dynamic var id = ""
     

@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class WikidataDate: Object {
+final class WikidataDate: Object {
     
     dynamic var rawPrecision = ""
     let year = RealmOptional<Int>()

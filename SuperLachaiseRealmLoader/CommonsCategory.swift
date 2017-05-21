@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class CommonsCategory: Object {
+final class CommonsCategory: Object {
     
     dynamic var id = ""
     

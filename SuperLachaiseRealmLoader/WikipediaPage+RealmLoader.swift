@@ -1,5 +1,5 @@
 //
-//  LocalizedCategory+JSON.swift
+//  WikipediaPage+RealmLoader.swift
 //  SuperLachaiseRealmLoader
 //
 //  Created by Maxime Le Moine on 21/05/2017.
@@ -10,17 +10,18 @@ import Foundation
 import RealmSwift
 import SwiftyJSON
 
-extension LocalizedCategory {
+extension WikipediaPage {
     
-    convenience init(json: JSON, category: Category, realm: Realm) throws {
+    convenience init(json: JSON, realm: Realm) throws {
         self.init()
         
         try json["language"].assertType(type: .string)
-        try json["label"].assertType(type: .string)
+        try json["title"].assertType(type: .string)
+        try json["extract"].assertType(type: .string)
         
         self.language = json["language"].stringValue
-        self.category = category
-        self.label = json["label"].stringValue
+        self.title = json["title"].stringValue
+        self.extract = json["extract"].stringValue
         
         realm.add(self)
     }

@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class Category: Object {
+final class Category: Object {
     
     dynamic var id = ""
     

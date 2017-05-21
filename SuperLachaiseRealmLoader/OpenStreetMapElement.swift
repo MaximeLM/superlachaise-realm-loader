@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class OpenStreetMapElement: Object {
+final class OpenStreetMapElement: Object {
     
     dynamic var elementType = ""
     dynamic var numericID: Int64 = 0

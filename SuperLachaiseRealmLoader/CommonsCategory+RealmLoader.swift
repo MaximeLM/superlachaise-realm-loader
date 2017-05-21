@@ -1,5 +1,5 @@
 //
-//  CommonsCategory+JSON.swift
+//  CommonsCategory+RealmLoader.swift
 //  SuperLachaiseRealmLoader
 //
 //  Created by Maxime Le Moine on 21/05/2017.

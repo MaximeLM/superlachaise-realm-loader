@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class WikidataEntry: Object {
+final class WikidataEntry: Object {
     
     dynamic var id = ""
     

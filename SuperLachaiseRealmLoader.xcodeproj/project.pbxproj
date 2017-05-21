@@ -19,17 +19,17 @@
 		557A26761ED1B99300F636F0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26751ED1B99300F636F0 /* Category.swift */; };
 		557A26781ED1B99D00F636F0 /* LocalizedCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26771ED1B99D00F636F0 /* LocalizedCategory.swift */; };
 		557A267D1ED1C6B600F636F0 /* RealmLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A267C1ED1C6B600F636F0 /* RealmLoader.swift */; };
-		557A26811ED1CC3A00F636F0 /* OpenStreetMapElement+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26801ED1CC3A00F636F0 /* OpenStreetMapElement+JSON.swift */; };
+		557A26811ED1CC3A00F636F0 /* OpenStreetMapElement+RealmLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26801ED1CC3A00F636F0 /* OpenStreetMapElement+RealmLoader.swift */; };
 		557A26841ED1CCCA00F636F0 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26831ED1CCCA00F636F0 /* JSON.swift */; };
 		557A26861ED1CE5400F636F0 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26851ED1CE5400F636F0 /* Realm.swift */; };
-		557A26881ED1CF7100F636F0 /* LocalizedCategory+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26871ED1CF7100F636F0 /* LocalizedCategory+JSON.swift */; };
-		557A268A1ED1D03600F636F0 /* Category+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26891ED1D03600F636F0 /* Category+JSON.swift */; };
-		557A268C1ED1D0EA00F636F0 /* CommonsFile+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A268B1ED1D0EA00F636F0 /* CommonsFile+JSON.swift */; };
-		557A268E1ED1D1C800F636F0 /* CommonsCategory+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A268D1ED1D1C800F636F0 /* CommonsCategory+JSON.swift */; };
-		557A26901ED1D2EC00F636F0 /* WikipediaPage+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A268F1ED1D2EC00F636F0 /* WikipediaPage+JSON.swift */; };
-		557A26921ED1D35300F636F0 /* WikidataDate+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26911ED1D35300F636F0 /* WikidataDate+JSON.swift */; };
-		557A26941ED1D4C300F636F0 /* LocalizedWikidataEntry+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26931ED1D4C300F636F0 /* LocalizedWikidataEntry+JSON.swift */; };
-		557A26961ED1D6F300F636F0 /* WikidataEntry+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26951ED1D6F300F636F0 /* WikidataEntry+JSON.swift */; };
+		557A26881ED1CF7100F636F0 /* LocalizedCategory+RealmLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26871ED1CF7100F636F0 /* LocalizedCategory+RealmLoader.swift */; };
+		557A268A1ED1D03600F636F0 /* Category+RealmLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26891ED1D03600F636F0 /* Category+RealmLoader.swift */; };
+		557A268C1ED1D0EA00F636F0 /* CommonsFile+RealmLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A268B1ED1D0EA00F636F0 /* CommonsFile+RealmLoader.swift */; };
+		557A268E1ED1D1C800F636F0 /* CommonsCategory+RealmLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A268D1ED1D1C800F636F0 /* CommonsCategory+RealmLoader.swift */; };
+		557A26901ED1D2EC00F636F0 /* WikipediaPage+RealmLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A268F1ED1D2EC00F636F0 /* WikipediaPage+RealmLoader.swift */; };
+		557A26921ED1D35300F636F0 /* WikidataDate+RealmLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26911ED1D35300F636F0 /* WikidataDate+RealmLoader.swift */; };
+		557A26941ED1D4C300F636F0 /* LocalizedWikidataEntry+RealmLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26931ED1D4C300F636F0 /* LocalizedWikidataEntry+RealmLoader.swift */; };
+		557A26961ED1D6F300F636F0 /* WikidataEntry+RealmLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26951ED1D6F300F636F0 /* WikidataEntry+RealmLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,17 +49,17 @@
 		557A267C1ED1C6B600F636F0 /* RealmLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmLoader.swift; sourceTree = "<group>"; };
 		557A267E1ED1CABD00F636F0 /* in */ = {isa = PBXFileReference; lastKnownFileType = folder; path = in; sourceTree = "<group>"; };
 		557A267F1ED1CABD00F636F0 /* out */ = {isa = PBXFileReference; lastKnownFileType = folder; path = out; sourceTree = "<group>"; };
-		557A26801ED1CC3A00F636F0 /* OpenStreetMapElement+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenStreetMapElement+JSON.swift"; sourceTree = "<group>"; };
+		557A26801ED1CC3A00F636F0 /* OpenStreetMapElement+RealmLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenStreetMapElement+RealmLoader.swift"; sourceTree = "<group>"; };
 		557A26831ED1CCCA00F636F0 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		557A26851ED1CE5400F636F0 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
-		557A26871ED1CF7100F636F0 /* LocalizedCategory+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocalizedCategory+JSON.swift"; sourceTree = "<group>"; };
-		557A26891ED1D03600F636F0 /* Category+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+JSON.swift"; sourceTree = "<group>"; };
-		557A268B1ED1D0EA00F636F0 /* CommonsFile+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CommonsFile+JSON.swift"; sourceTree = "<group>"; };
-		557A268D1ED1D1C800F636F0 /* CommonsCategory+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CommonsCategory+JSON.swift"; sourceTree = "<group>"; };
-		557A268F1ED1D2EC00F636F0 /* WikipediaPage+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WikipediaPage+JSON.swift"; sourceTree = "<group>"; };
-		557A26911ED1D35300F636F0 /* WikidataDate+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WikidataDate+JSON.swift"; sourceTree = "<group>"; };
-		557A26931ED1D4C300F636F0 /* LocalizedWikidataEntry+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocalizedWikidataEntry+JSON.swift"; sourceTree = "<group>"; };
-		557A26951ED1D6F300F636F0 /* WikidataEntry+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WikidataEntry+JSON.swift"; sourceTree = "<group>"; };
+		557A26871ED1CF7100F636F0 /* LocalizedCategory+RealmLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocalizedCategory+RealmLoader.swift"; sourceTree = "<group>"; };
+		557A26891ED1D03600F636F0 /* Category+RealmLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+RealmLoader.swift"; sourceTree = "<group>"; };
+		557A268B1ED1D0EA00F636F0 /* CommonsFile+RealmLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CommonsFile+RealmLoader.swift"; sourceTree = "<group>"; };
+		557A268D1ED1D1C800F636F0 /* CommonsCategory+RealmLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CommonsCategory+RealmLoader.swift"; sourceTree = "<group>"; };
+		557A268F1ED1D2EC00F636F0 /* WikipediaPage+RealmLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WikipediaPage+RealmLoader.swift"; sourceTree = "<group>"; };
+		557A26911ED1D35300F636F0 /* WikidataDate+RealmLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WikidataDate+RealmLoader.swift"; sourceTree = "<group>"; };
+		557A26931ED1D4C300F636F0 /* LocalizedWikidataEntry+RealmLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocalizedWikidataEntry+RealmLoader.swift"; sourceTree = "<group>"; };
+		557A26951ED1D6F300F636F0 /* WikidataEntry+RealmLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WikidataEntry+RealmLoader.swift"; sourceTree = "<group>"; };
 		78B64916FE5394710D01920A /* Pods-SuperLachaiseRealmLoader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperLachaiseRealmLoader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperLachaiseRealmLoader/Pods-SuperLachaiseRealmLoader.debug.xcconfig"; sourceTree = "<group>"; };
 		9FC12938D79F33C49BCD59C5 /* Pods_SuperLachaiseRealmLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperLachaiseRealmLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -141,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				557A26621ED1B8E400F636F0 /* OpenStreetMapElement.swift */,
-				557A26801ED1CC3A00F636F0 /* OpenStreetMapElement+JSON.swift */,
+				557A26801ED1CC3A00F636F0 /* OpenStreetMapElement+RealmLoader.swift */,
 			);
 			name = OpenStreetMap;
 			sourceTree = "<group>";
@@ -152,9 +152,9 @@
 				557A26661ED1B92300F636F0 /* WikidataEntry.swift */,
 				557A26681ED1B92D00F636F0 /* LocalizedWikidataEntry.swift */,
 				557A266A1ED1B93800F636F0 /* WikidataDate.swift */,
-				557A26951ED1D6F300F636F0 /* WikidataEntry+JSON.swift */,
-				557A26931ED1D4C300F636F0 /* LocalizedWikidataEntry+JSON.swift */,
-				557A26911ED1D35300F636F0 /* WikidataDate+JSON.swift */,
+				557A26951ED1D6F300F636F0 /* WikidataEntry+RealmLoader.swift */,
+				557A26931ED1D4C300F636F0 /* LocalizedWikidataEntry+RealmLoader.swift */,
+				557A26911ED1D35300F636F0 /* WikidataDate+RealmLoader.swift */,
 			);
 			name = Wikidata;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				557A266D1ED1B95800F636F0 /* WikipediaPage.swift */,
-				557A268F1ED1D2EC00F636F0 /* WikipediaPage+JSON.swift */,
+				557A268F1ED1D2EC00F636F0 /* WikipediaPage+RealmLoader.swift */,
 			);
 			name = Wikipedia;
 			sourceTree = "<group>";
@@ -173,8 +173,8 @@
 			children = (
 				557A26701ED1B97300F636F0 /* CommonsCategory.swift */,
 				557A26721ED1B97D00F636F0 /* CommonsFile.swift */,
-				557A268D1ED1D1C800F636F0 /* CommonsCategory+JSON.swift */,
-				557A268B1ED1D0EA00F636F0 /* CommonsFile+JSON.swift */,
+				557A268D1ED1D1C800F636F0 /* CommonsCategory+RealmLoader.swift */,
+				557A268B1ED1D0EA00F636F0 /* CommonsFile+RealmLoader.swift */,
 			);
 			name = Commons;
 			sourceTree = "<group>";
@@ -184,8 +184,8 @@
 			children = (
 				557A26751ED1B99300F636F0 /* Category.swift */,
 				557A26771ED1B99D00F636F0 /* LocalizedCategory.swift */,
-				557A26891ED1D03600F636F0 /* Category+JSON.swift */,
-				557A26871ED1CF7100F636F0 /* LocalizedCategory+JSON.swift */,
+				557A26891ED1D03600F636F0 /* Category+RealmLoader.swift */,
+				557A26871ED1CF7100F636F0 /* LocalizedCategory+RealmLoader.swift */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -327,26 +327,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				557A268E1ED1D1C800F636F0 /* CommonsCategory+JSON.swift in Sources */,
-				557A26901ED1D2EC00F636F0 /* WikipediaPage+JSON.swift in Sources */,
+				557A268E1ED1D1C800F636F0 /* CommonsCategory+RealmLoader.swift in Sources */,
+				557A26901ED1D2EC00F636F0 /* WikipediaPage+RealmLoader.swift in Sources */,
 				557A26731ED1B97D00F636F0 /* CommonsFile.swift in Sources */,
-				557A26921ED1D35300F636F0 /* WikidataDate+JSON.swift in Sources */,
-				557A268A1ED1D03600F636F0 /* Category+JSON.swift in Sources */,
+				557A26921ED1D35300F636F0 /* WikidataDate+RealmLoader.swift in Sources */,
+				557A268A1ED1D03600F636F0 /* Category+RealmLoader.swift in Sources */,
 				557A26841ED1CCCA00F636F0 /* JSON.swift in Sources */,
 				557A266E1ED1B95800F636F0 /* WikipediaPage.swift in Sources */,
-				557A26881ED1CF7100F636F0 /* LocalizedCategory+JSON.swift in Sources */,
+				557A26881ED1CF7100F636F0 /* LocalizedCategory+RealmLoader.swift in Sources */,
 				557A26861ED1CE5400F636F0 /* Realm.swift in Sources */,
 				557A26631ED1B8E400F636F0 /* OpenStreetMapElement.swift in Sources */,
 				557A266B1ED1B93800F636F0 /* WikidataDate.swift in Sources */,
-				557A26811ED1CC3A00F636F0 /* OpenStreetMapElement+JSON.swift in Sources */,
-				557A26961ED1D6F300F636F0 /* WikidataEntry+JSON.swift in Sources */,
+				557A26811ED1CC3A00F636F0 /* OpenStreetMapElement+RealmLoader.swift in Sources */,
+				557A26961ED1D6F300F636F0 /* WikidataEntry+RealmLoader.swift in Sources */,
 				557A26601ED1B88600F636F0 /* main.swift in Sources */,
 				557A26761ED1B99300F636F0 /* Category.swift in Sources */,
 				557A26711ED1B97300F636F0 /* CommonsCategory.swift in Sources */,
 				557A26781ED1B99D00F636F0 /* LocalizedCategory.swift in Sources */,
 				557A267D1ED1C6B600F636F0 /* RealmLoader.swift in Sources */,
-				557A268C1ED1D0EA00F636F0 /* CommonsFile+JSON.swift in Sources */,
-				557A26941ED1D4C300F636F0 /* LocalizedWikidataEntry+JSON.swift in Sources */,
+				557A268C1ED1D0EA00F636F0 /* CommonsFile+RealmLoader.swift in Sources */,
+				557A26941ED1D4C300F636F0 /* LocalizedWikidataEntry+RealmLoader.swift in Sources */,
 				557A26691ED1B92D00F636F0 /* LocalizedWikidataEntry.swift in Sources */,
 				557A26671ED1B92300F636F0 /* WikidataEntry.swift in Sources */,
 			);

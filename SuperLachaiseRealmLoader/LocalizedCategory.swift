@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class LocalizedCategory: Object {
+final class LocalizedCategory: Object {
     
     dynamic var language = ""
     dynamic var category: Category?
