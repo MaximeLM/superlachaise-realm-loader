@@ -35,3 +35,19 @@ class WikidataEntry: Object {
     }
     
 }
+
+extension WikidataEntry {
+    
+    enum Kind: String {
+        case graveOf
+        case grave
+        case monument
+    }
+    
+    var kind: Kind? {
+        get {
+            return Kind(rawValue: rawKind)
+        }
+    }
+    
+}
