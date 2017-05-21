@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		018724A0B56C8DBD9F56AE97 /* Pods_SuperLachaiseRealmLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC12938D79F33C49BCD59C5 /* Pods_SuperLachaiseRealmLoader.framework */; };
+		556717FA1ED24B1900C3A0A2 /* StoreV1NodeIdMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556717F91ED24B1900C3A0A2 /* StoreV1NodeIdMapping.swift */; };
+		556717FC1ED24B5600C3A0A2 /* StoreV1NodeIdMapping+RealmLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556717FB1ED24B5600C3A0A2 /* StoreV1NodeIdMapping+RealmLoader.swift */; };
 		557A26601ED1B88600F636F0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A265F1ED1B88600F636F0 /* main.swift */; };
 		557A26631ED1B8E400F636F0 /* OpenStreetMapElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26621ED1B8E400F636F0 /* OpenStreetMapElement.swift */; };
 		557A26671ED1B92300F636F0 /* WikidataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26661ED1B92300F636F0 /* WikidataEntry.swift */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		2237016C0E35C3BE4C426FFB /* Pods-SuperLachaiseRealmLoader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperLachaiseRealmLoader.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperLachaiseRealmLoader/Pods-SuperLachaiseRealmLoader.release.xcconfig"; sourceTree = "<group>"; };
+		556717F91ED24B1900C3A0A2 /* StoreV1NodeIdMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreV1NodeIdMapping.swift; sourceTree = "<group>"; };
+		556717FB1ED24B5600C3A0A2 /* StoreV1NodeIdMapping+RealmLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreV1NodeIdMapping+RealmLoader.swift"; sourceTree = "<group>"; };
 		557A264D1ED1B6A400F636F0 /* SuperLachaiseRealmLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperLachaiseRealmLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		557A26591ED1B6A400F636F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		557A265F1ED1B88600F636F0 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 				557A268B1ED1D0EA00F636F0 /* CommonsFile+RealmLoader.swift */,
 				557A26891ED1D03600F636F0 /* Category+RealmLoader.swift */,
 				557A26871ED1CF7100F636F0 /* LocalizedCategory+RealmLoader.swift */,
+				556717FB1ED24B5600C3A0A2 /* StoreV1NodeIdMapping+RealmLoader.swift */,
 			);
 			name = "Model+RealmLoader";
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 				557A26721ED1B97D00F636F0 /* CommonsFile.swift */,
 				557A26751ED1B99300F636F0 /* Category.swift */,
 				557A26771ED1B99D00F636F0 /* LocalizedCategory.swift */,
+				556717F91ED24B1900C3A0A2 /* StoreV1NodeIdMapping.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 			files = (
 				557A268E1ED1D1C800F636F0 /* CommonsCategory+RealmLoader.swift in Sources */,
 				557A26901ED1D2EC00F636F0 /* WikipediaPage+RealmLoader.swift in Sources */,
+				556717FA1ED24B1900C3A0A2 /* StoreV1NodeIdMapping.swift in Sources */,
 				557A26731ED1B97D00F636F0 /* CommonsFile.swift in Sources */,
 				557A26921ED1D35300F636F0 /* WikidataDate+RealmLoader.swift in Sources */,
 				557A268A1ED1D03600F636F0 /* Category+RealmLoader.swift in Sources */,
@@ -309,6 +316,7 @@
 				557A26811ED1CC3A00F636F0 /* OpenStreetMapElement+RealmLoader.swift in Sources */,
 				557A26961ED1D6F300F636F0 /* WikidataEntry+RealmLoader.swift in Sources */,
 				557A26601ED1B88600F636F0 /* main.swift in Sources */,
+				556717FC1ED24B5600C3A0A2 /* StoreV1NodeIdMapping+RealmLoader.swift in Sources */,
 				557A26761ED1B99300F636F0 /* Category.swift in Sources */,
 				557A26711ED1B97300F636F0 /* CommonsCategory.swift in Sources */,
 				557A26781ED1B99D00F636F0 /* LocalizedCategory.swift in Sources */,

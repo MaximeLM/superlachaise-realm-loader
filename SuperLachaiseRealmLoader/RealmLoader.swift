@@ -46,6 +46,7 @@ class RealmLoader {
         case wikipedia_pages
         case wikidata_entries
         case openstreetmap_elements
+        case storev1_node_id_mappings
         
         static let all: [File] = [
             .categories,
@@ -54,6 +55,7 @@ class RealmLoader {
             .wikipedia_pages,
             .wikidata_entries,
             .openstreetmap_elements,
+            .storev1_node_id_mappings,
         ]
     }
     
@@ -84,6 +86,8 @@ class RealmLoader {
                 _ = try WikidataEntry(json: json, realm: realm)
             case .openstreetmap_elements:
                 _ = try OpenStreetMapElement(json: json, realm: realm)
+            case .storev1_node_id_mappings:
+                _ = try StoreV1NodeIdMapping(json: json, realm: realm)
             }
         }
     }
