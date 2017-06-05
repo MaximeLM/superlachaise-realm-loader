@@ -22,8 +22,8 @@ extension OpenStreetMapElement {
         try json["wikidata_entry"].assertType(type: .string)
         
         self.elementType = json["element_type"].stringValue
-        self.numericID = json["numeric_id"].int64Value
-        self.id = "\(elementType)|\(numericID)"
+        self.numericId = json["numeric_id"].int64Value
+        self.id = "\(elementType)|\(numericId)"
         self.latitude = json["latitude"].doubleValue
         self.longitude = json["longitude"].doubleValue
         self.wikidataEntry = try realm.objectOrThrow(ofType: WikidataEntry.self, forPrimaryKey: json["wikidata_entry"].stringValue)
